@@ -13,7 +13,8 @@ WHEN I refresh the page
 THEN the saved events persist*/
 
 // render currentDay with Moment.js at top of index.html
-var presentDate = moment().format('MMMM Do YYYY, h:mm:ss a'); // renders date and time
+/* https://devhints.io/datetime */
+var presentDate = moment().format('MMMM Do YYYY'); // renders date and time
 $('#currentDay').text(presentDate);
 
 /* locate class id, 
@@ -24,8 +25,9 @@ introduce function to create it on page*/
 // jQuery selector for 'container' div element
 var taskCreation = $('.container');
 
-var taskCreationBlock = $('<div>').addClass('task-creation-block');
-taskCreation.append(taskCreationBlock)
+// setting up variables for use within the container
+
+
 
 // function to produce eight hours of task events on the index page
 
