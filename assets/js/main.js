@@ -14,18 +14,11 @@ THEN the saved events persist*/
 
 // render currentDay with Moment.js at top of index.html
 /* https://devhints.io/datetime */
-var presentDate = moment().format('MMMM Do YYYY'); // renders date and time
+var presentDate = moment().format('MMMM Do YYYY'); // renders date
+var currentTime = moment().format('h:mm:ss a');  // renders current time
 $('#currentDay').text(presentDate);
 
-/* locate class id, 
-use jQuery to select it, 
-create variable to define it, 
-introduce function to create it on page*/
-
-// jQuery selector for 'container' div element
-var taskCreation = $('.container');
-
-// setting up variables for use within the container
+// setting up variables for use
 
 
 
