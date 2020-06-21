@@ -13,6 +13,8 @@ WHEN I refresh the page
 THEN the saved events persist*/
 
 // render currentDay with Moment.js at top of index.html
+var presentDate = moment().format('LL');
+$('#currentDay').text(presentDate);
 
 /* locate class id, 
 use jQuery to select it, 
