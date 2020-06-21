@@ -13,7 +13,7 @@ WHEN I refresh the page
 THEN the saved events persist*/
 
 // render currentDay with Moment.js at top of index.html
-var presentDate = moment().format('LL');
+var presentDate = moment().format('MMMM Do YYYY, h:mm:ss a'); // renders date and time
 $('#currentDay').text(presentDate);
 
 /* locate class id, 
@@ -21,17 +21,15 @@ use jQuery to select it,
 create variable to define it, 
 introduce function to create it on page*/
 
-/* 'container' element-class can be used to create dynamic elements
-inside with jQuery to generate the time blocks, event blocks, 
-and save blocks:
+// jQuery selector for 'container' div element
+var taskCreation = $('.container');
 
-workday = 9-5 
+var taskCreationBlock = $('<div>').addClass('task-creation-block');
+taskCreation.append(taskCreationBlock)
 
-var hour = moment.js script for generating X-AM
+// function to produce eight hours of task events on the index page
 
-function to produce eight hours of task events on the index page
+// for (var i = 0; i <= 0; i++) {} code goes here
 
-ability to edit tasks, tasks automatically change highlighted color
-depending on current time of day and task hour having passed
+// begin taskCreation
 
-ability to save tasks and persist even after refresh*/
