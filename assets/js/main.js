@@ -37,9 +37,9 @@ function loadTasks(){
     // 9AM 
     let nineAm = localStorage.getItem("9AM");
     if(!nineAm){
-        $(".ninAM").val(nineAm);
+        $("#niner").val(nineAm);
     }
-    $(".ninAM").text(nineAm);
+    $("#niner").text(nineAm);
 
     // 10AM
     let tenAM = localStorage.getItem("10AM");
@@ -51,7 +51,7 @@ function loadTasks(){
 }
 // on click save-tasks for scheduler
 $("#nineth").on("click", function(){
-    localStorage.setItem("9AM", $("#niner").val());   // bug exists where using class calls back as 'undefined', using id causes task item not to persist
+    localStorage.setItem("9AM", $("#niner").val());   
 })
 
 loadTasks();
