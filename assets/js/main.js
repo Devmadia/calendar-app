@@ -14,29 +14,28 @@ THEN the saved events persist*/
 
 // render currentDay with Moment.js at top of index.html
 /* https://devhints.io/datetime */
-var presentDate = moment().format('MMMM Do YYYY'); // renders date
-var currentTime = moment().format('h:mm:ss a');  // renders current time
-$('#currentDay').text(presentDate);
+var updateClock = function() {
+    var presentDate = moment().format('MMMM Do YYYY, h:mm:ss a'); // renders date
+    //var currentTime = moment().format('h:mm:ss a');  // renders current time
+    $('#currentDay').text(presentDate);
+}
+setInterval(updateClock,1000);
+    
+// setting up time variables for use - https://momentjs.com/docs/#/get-set/
 
-// setting up variables for use
-var 9AmHr
-var 10AmHr
-var 11AmHr
-var 12PmHr
-var 1PmHr
-var 2PmHr
-var 3PmHr
-var 4PmHr
-var 5PmHr
+var ninAmHr = moment().set('hour', 9);
+var tenAmHr = moment().set('hour', 10);
+var eleAmHr = moment().set('hour', 11);
+var twelPmHr = moment().set('hour', 12);
+var onePmHr = moment().set('hour', 13);
+var twoPmHr = moment().set('hour', 14);
+var thrPmHr = moment().set('hour', 15);
+var fouPmHr = moment().set('hour', 16);
+var fivPmHr = moment().set('hour', 17);
 
-var saveTasks()
-
-
-
-
-// function to produce eight hours of task events on the index page
-
-// for (var i = 0; i <= 0; i++) {} code goes here
-
-// begin taskCreation
-
+/*var eventDisplay() {
+    // 
+    let 9AMHr = localStorage.getItem("");
+    if (!taskNameInput) {
+        $("").val();  // 
+    }}*/
