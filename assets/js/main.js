@@ -19,6 +19,18 @@ var currentTime = moment().format('h:mm:ss a');  // renders current time
 $('#currentDay').text(presentDate);
 
 // setting up variables for use
+var 9AmHr
+var 10AmHr
+var 11AmHr
+var 12PmHr
+var 1PmHr
+var 2PmHr
+var 3PmHr
+var 4PmHr
+var 5PmHr
+
+var saveTasks()
+
 
 
 
